@@ -20,9 +20,9 @@ if st.button("Добави"):
 else:
   st.warning("Попълнете всички полета!")
 # Премахване
+names = []
 if st.session_state.animals:
   st.header("Премахни животно")
-  names = []
   for a in st.session_state.animals:
     names.append(a["име"])
   remove_name = st.selectbox("Избери животно за премахване", nаmes)
