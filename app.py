@@ -6,7 +6,7 @@ if "animals" not in st.session_state:
   st.session_state.animals = []
 # Добавяне
 st.header("Добави ново животно")
-name = st.text_input("Име на животното")
+names = st.text_input("Име на животното")
 description = st.text_area ("Описание")
 image_url = st.text_input("URL на картинка")
 if st.button("Добави"):
@@ -25,7 +25,7 @@ if st.session_state.animals:
   names = []
   for a in st.session_state.animals:
     names.append(a["име"])
-  remove_name = st.selectbox("Избери животно за премахване", nаmes)
+  remove_name = st.selectbox("Избери животно за премахване", nаme)
   if st.button("Премахни"):
     for a in st.session_state.animals:
       if a["име"] == remove_name:
