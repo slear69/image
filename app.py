@@ -6,7 +6,7 @@ if "animals" not in st.session_state:
   st.session_state.animals = []
 # Добавяне
 st.header("Добави ново животно")
-names = st.text_input("Име на животното")
+name = st.text_input("Име на животното")
 description = st.text_area ("Описание")
 image_url = st.text_input("URL на картинка")
 if st.button("Добави"):
