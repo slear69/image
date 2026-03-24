@@ -25,7 +25,7 @@ if st.session_state.animals:
   names = []
   for a in st.session_state.animals:
     names.append(a["име"])
-  remove_name = st.selectbox("Избери животно за премахване", nаme)
+  remove_name = st.selectbox("Избери животно за премахване", nаmes)
   if st.button("Премахни"):
     for a in st.session_state.animals:
       if a["име"] == remove_name:
